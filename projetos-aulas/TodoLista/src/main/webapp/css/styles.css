@@ -1,0 +1,60 @@
+
+.container {
+    display: grid;
+    background-color: #000;
+    max-width: 400px;
+    height: 100vh; 
+    margin: 0 auto; 
+    grid-template-rows: 70px 1fr 100px; 
+    grid-template-areas: 
+        "header header header"
+        ". lista ."
+        "rodape rodape rodape";
+    color: #fff;
+}
+
+/*@media(max-width: 400px) {
+    .container {
+        grid-template-areas: 
+            "header header header"
+            "lista lista ."
+            "lista lista .";
+    }
+    .container footer {
+        display: none;
+    }
+}*/
+
+/* davesmartins.github.io/code/seletoresCss */
+
+.container header {
+    /*o container é grid, mas o header é flex*/
+    display: flex;
+    grid-area: header;
+    background-color: #0af;
+    /*propriedade flex*/
+    align-items: center;
+
+}
+
+.container main  {
+    grid-area: lista;
+    background-color: red;
+}
+
+.container footer {
+    grid-area: rodape; /* qualquer nome */
+    background-color: green;
+}
+
+.title {
+    flex-grow: 1;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 800;
+    
+}
+
+.container header div {
+    padding: 5px;
+}
