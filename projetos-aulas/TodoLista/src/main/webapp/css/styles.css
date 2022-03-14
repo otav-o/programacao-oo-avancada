@@ -31,10 +31,12 @@
     /*o container é grid, mas o header é flex*/
     display: flex;
     grid-area: header;
-    background-color: #0af;
+    background-color: #000;
     /*propriedade flex*/
     align-items: center;
-
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 36px;
 }
 
 .container main  {
