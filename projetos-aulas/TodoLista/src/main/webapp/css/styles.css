@@ -42,6 +42,10 @@
     background-color: red;
 }
 
+input, button {
+    color: #000;
+}
+
 .container footer {
     grid-area: rodape; /* qualquer nome */
     background-color: green;

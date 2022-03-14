@@ -11,13 +11,27 @@
             <header>
 <!--                <div>Logo</div>-->
                 <div>
-                    <img src="img/logo.png"/>
+                    <!--<img src="img/logo.png"/>-->
                 </div>                
                 <div class="title">NiverSite</div>
                 <i class="fa-solid fa-circle-question"></i>
             </header>
 
-            <main></main>
+            <main>
+                <form action="pagina" method="GET">
+                    Nome: <input type="text" name="cpNome"/> <br>
+                    Peso: <input type="text" name="cpPeso"/> <br>
+                    Altura: <input type="number" name="cpAltura"/> <br>
+                    <br>
+                    <button>Calcular</button>
+                </form>
+                <form action="Notas" method="GET">
+                    Nota 1: <input type="number" name="nota1"/> <br>
+                    Nota 2: <input type="number" name="nota2"/> <br>
+                    <br>
+                    <button>Calcular se foi aprovado</button>
+                </form>
+            </main>
 
             <footer>
 <!--davesmartins.github.io/code/flex-->
